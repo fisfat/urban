@@ -44,17 +44,21 @@
 @if(session('error'))
     <div class="alert  text-center fade show alert-dismissible alert-danger">
         {!!session('error')!!}
-    </div>
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
+    </div>
+    
 @endif
 
 @if(session('success'))
     <div class="alert text-center fade show alert-dismissible alert-success">
         {{session('success')}}
-    </div>
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-    </button>
+        </button>
+    </div>
+    
 @endif
